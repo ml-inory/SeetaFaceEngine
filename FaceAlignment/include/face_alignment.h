@@ -60,8 +60,8 @@ class FaceAlignment{
   */
   SEETA_API bool PointDetectLandmarks(ImageData gray_im, FaceInfo face_info, FacialLandmark *points);
 
- private:
   CCFAN *facial_detector;
+ private:
 };
 }  // namespace seeta
 

@@ -34,6 +34,7 @@
 
 #include <cstdint>
 #include <vector>
+#include <string>
 
 #include "common.h"
 
@@ -43,6 +44,7 @@ class FaceDetection {
  public:
   SEETA_API explicit FaceDetection(const char* model_path);
   SEETA_API ~FaceDetection();
+
 
   /**
    * @brief Detect faces on input image.
@@ -95,7 +97,7 @@ class FaceDetection {
    */
   SEETA_API void SetScoreThresh(float thresh);
 
-  DISABLE_COPY_AND_ASSIGN(FaceDetection);
+  //DISABLE_COPY_AND_ASSIGN(FaceDetection);
 
  private:
   class Impl;
