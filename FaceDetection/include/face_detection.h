@@ -42,9 +42,12 @@ namespace seeta {
 
 class FaceDetection {
  public:
-  SEETA_API explicit FaceDetection(const char* model_path);
+  SEETA_API FaceDetection(const char* model_path);
+  SEETA_API FaceDetection();
   SEETA_API ~FaceDetection();
 
+  //rzyang
+  SEETA_API bool LoadModel(const char* model_path);
 
   /**
    * @brief Detect faces on input image.

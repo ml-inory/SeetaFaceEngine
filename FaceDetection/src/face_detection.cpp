@@ -74,9 +74,18 @@ FaceDetection::FaceDetection(const char* model_path)
   impl_->detector_->LoadModel(model_path);
 }
 
+FaceDetection::FaceDetection()
+    : impl_(new seeta::FaceDetection::Impl()) {
+}
+
 FaceDetection::~FaceDetection() {
   if (impl_ != nullptr)
     delete impl_;
+}
+
+bool FaceDetection::LoadModel(const char* model_path)
+{
+    impl_->detector_->LoadModel(model_path);
 }
 
 std::vector<seeta::FaceInfo> FaceDetection::Detect(

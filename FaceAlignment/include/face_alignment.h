@@ -26,7 +26,7 @@
  * Contact Info: you can send an email to SeetaFace@vipl.ict.ac.cn for any problems.
  *
  * Note: the above information must be kept whenever or wherever the codes are used.
- *
+ 
  */
 
 #ifndef SEETA_FACE_ALIGNMENT_H_
